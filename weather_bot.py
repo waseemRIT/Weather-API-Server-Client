@@ -1,6 +1,6 @@
 
 import os
 
-api_key = os.environ.get("WEATHER_API")
+api_key = os.environ.get("WEATHERAPI")
 
 print(api_key)
