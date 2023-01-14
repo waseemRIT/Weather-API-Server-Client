@@ -1,8 +1,12 @@
+from socketserver import ThreadingMixIn
 from flask import Flask, jsonify
 import os
 import requests
 
-app = Flask(__name__)
+class ThreadedFlaskServer(ThreadingMixIn, Flask):
+    pass
+
+app = ThreadedFlaskServer(__name__)
 
 # API KEY STORED IN ENVIRONMENT VARIABLE --> WEATHERAPI
 API_KEY = os.environ.get("WEATHERAPI")
