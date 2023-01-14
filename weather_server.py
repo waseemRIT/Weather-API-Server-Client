@@ -18,7 +18,7 @@ API_KEY = os.environ.get("WEATHERAPI")
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 
 # List of cities for which the weather data is provided
-CITIES = ["DUBAI", "NEW YORK", "LONDON", "TOKYO", "BEIJING"]
+CITIES = ["DUBAI", "NEW YORK", "LONDON", "TOKYO", "BEIJING", "PARIS", "BERLIN", "MOSCOW", "RIYADH", "CAIRO", "MEXICO CITY", "SYDNEY", "ROME", "AMSTERDAM", "ISTANBUL", "BANGKOK", "HONG KONG", "SINGAPORE", "TORONTO", "SEOUL", "MUMBAI", "DELHI", "LIMA"]
 
 
 # Function to fetch and parse the weather data for a given city
